@@ -65,12 +65,7 @@ jobs:
           path: "build/ios/iphoneos/*"
           key: ipa
       - name: logs cache
-        run: ls -all build/ios/iphoneos/ 
-
-  chat_notification:
-      name: Google chat notification
-      needs: [push_ipa, build_android]
-      runs-on: ubuntu-latest
+        run: ls -all build/ios/iphoneos/
       
       
         
